@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Internit Investments",
+  "version": "2.0",
+  "description": "Uma extensão para investidores da internit!",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://investidor10.com.br/carteiras/resumo/*"
+      ],
+      "js": [
+        "./dist/app.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_icon": {}
+  },
+  "icons": {}
+}
