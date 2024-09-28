@@ -110,7 +110,7 @@ export class Table {
             resolve(this);
             clearInterval(interval);
           }
-        }, 500)
+        }, 1000)
       } else {
         console.log(`${this.#tableID} not found!`)
         resolve(null)
